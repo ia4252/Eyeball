@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <div class="header">
+    <p>Isaac Atteson</p>
+    <style>
+        .container {
+            position: relative;
+        }
+
+        #desc {
+            max-height: 5em;
+            overflow: hidden;
+        }
+    </style>
+    <center>
+        <header>
+            <bold>
+                <font size="10"><u>Diagram of a Ganglion Cell</u></font>
+                <font size="6"><p><bold>Scale (of cell body/soma): 1cm = 22.4 &#181;m (when printed)</bold></p></font>
+            </bold>
+        </header>
+        <font size="5">
+            <p id="name">Move mouse over parts of the image to see what they are</p>
+        </font>
+        <font size="4">
+            <div class="container">
+            <p id="desc">Move mouse over parts of the image to see more info about them</p>
+        </div>
+        </font>
+    </center>
+    </center>
+    </div>
+</head>
+<link rel="stylesheet" type="text/css" href="print.css" media="print" />
+<body>
+    <script>
+        document.getElementById("desc").innerHTML = "Move mouse over parts of the image to see more info about them"+"<br>".repeat(10);
+        function whenMouseOver(name) {
+            document.getElementById("name").innerHTML = name;
+            descs = {
+            'Move mouse over parts of the image to see what they are': "Move mouse over parts of the image to see more info about them",
+            "Axon": "...trasmits information from the ganglion cell to the neurons in the brain.<br>They collect and form the optic nerve which they exit the eye through.<br>Their message is encoded in neural impulses.",
+            "Cell Body (Soma)": "...contains everything inside of the cell membrane.<br>It contains all the organelles of the cell, including the nucleus and its DNA.<br>Any space in the cell body that is not filled with organelles is filled with cytoplasm.",
+            "Plasma Membrane/Cell Membrane": "...is the border of the cell.<br>The semipermeable lipid bilayer allows the membrane to control what goes into and out of the cell.",
+            "Autophagy Vacuole": "...is a membrane containing materials to be digested.",
+            "Vesicles":"...are formed around a protein in order to transport it.<br>They are made of lipid bilayer",
+            "Mitochondria":"...produce all of the energy for the cell.<br>This energy is stored in the mitochondria as ATP.<br>Mitochonria contain their own DNA.",
+            "Dendrites":"...are the receivers of the cell, and they work much like antennas.<br>They receive information from amacrine and bipolar cells and then send it to the cell body.",
+            "Nucleus":"is a membrane that protects and seperates the chromosomes/DNA from the rest of the cell.<br>It has pores for letting certain molecules in and out.",
+            "Nucleolus":"...is inside the nucleus.<br>It's purpose is to create ribosomes and ribsonal RNA and then transport them out of the nucleus where they arrive in the cytoplasm.",
+            "Ribosomes":"...create proteins by reading mRNA and encoding that into a chain of amino acids.<br>Ribosomes are made of RNA and protein.",
+            "Rough Endoplasmic Reticulum":"...produces the proteins required for the cell to function. It has ribosomes attached to it that do the protein production.<br>Both the rough and smooth ER help to move proteins throughout the cell and consist of a network of membranes.",
+            "Smooth Endoplasmic Reticulum":"...produces other materials needed by the cell.<br>It does not have ribosomes attached to it.<br>Both the rough and smooth ER help to move proteins throughout the cell and consist of a network of membranes.",
+            "Golgi Apparatus":"...is made of membranes and helps to process aswell as export proteins and lipids. It can also be called the Golgi body"
+        };
+            document.getElementById("desc").innerHTML = descs[name] + "<br>".repeat(10);
+        }
+    </script>
+    <center><img src="Ganglion.png" usemap="#image-map">
+        <map name="image-map">
+            <area onmouseover="whenMouseOver('Plasma Membrane/Cell Membrane')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="234,330,230,293,235,244,250,198,270,166,306,122,355,91,394,75,446,65,481,64,522,72,559,83,587,99,615,118,636,135,658,164,674,187,689,216,697,257,699,296,695,334,683,368,673,394,655,420,642,437,630,448,608,468,590,479,571,490,556,495,534,504,504,510,470,514,441,512,413,507,392,502,366,493,335,476,312,460,295,441,279,424,266,429,307,469,345,497,382,511,429,523,484,525,536,515,550,511,575,500,601,485,621,474,644,452,661,433,675,415,689,391,700,359,709,336,712,308,712,282,710,250,703,220,689,188,672,161,653,136,633,115,606,96,578,78,554,68,519,57,486,53,461,51,424,56,392,63,356,77,330,91,303,112,281,131,267,147,256,164,243,185,234,205,227,225,221,256,216,289,230,363,242,390,268,431,279,423,260,396,246,368"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Vesicles')"
+            onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="333,160,16" shape="circle">
+    <area onmouseover="whenMouseOver('Vesicles')"
+    onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="417,129,15" shape="circle">
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="453,360,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="451,347,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="468,343,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="457,338,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="453,360,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="465,324,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="457,338,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="445,300,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="435,308,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="417,311,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="429,316,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="431,327,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="418,327,3" shape="circle"></area>
+            <area onmouseover="whenMouseOver('Ribosomes')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="#" coords="434,346,3" s`hape="circle"></area>
+            <area onmouseover="whenMouseOver('Axon')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="221,323,224,339,228,347,230,357,207,354,182,353,142,351,102,350,78,348,41,347,0,344,2,300,34,300,58,298,86,298,116,295,148,293,190,291,206,291,220,291,220,309"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Nucleolus')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="" coords="515,293,15" shape="circle">
+            <area onmouseover="whenMouseOver('Nucleus')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="" coords="524,285,49" shape="circle">
+            <area onmouseover="whenMouseOver('Nucleus')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="" coords="525,298,51" shape="circle">
+            <area onmouseover="whenMouseOver('Golgi Apparatus')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="280,324,316,317,340,321,388,320,381,333,378,350,377,377,378,396,382,423,373,429,345,428,326,426,299,425,290,422,278,407,275,387,278,357,278,340"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Autophagy Vacuole')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="490,110,503,109,520,114,536,120,552,131,562,148,562,163,555,179,536,183,524,183,505,177,494,171,481,161,473,149,470,136,474,119,482,115"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Dendrites')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="712,265,710,256,707,242,713,234,724,227,733,218,742,207,749,194,775,175,807,145,827,131,848,120,872,109,910,107,940,113,953,129,956,145,958,180,933,162,917,143,900,139,876,144,856,152,839,170,812,195,798,213,783,226,760,242,746,244,732,250,717,252,723,275,733,280,746,284,755,291,767,300,787,314,801,329,813,348,828,370,832,393,835,415,846,430,854,424,868,415,883,405,902,391,922,381,942,375,956,374,957,391,944,399,933,405,923,415,907,419,891,430,874,440,850,444,830,448,820,448,812,423,804,398,798,381,789,354,773,334,752,316,733,305,720,300,713,295,712,281,713,272"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Smooth Endoplasmic Reticulum')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="443,206,431,223,424,241,425,253,419,257,407,262,398,269,402,288,405,302,417,302,428,300,440,296,446,294,451,290,456,290,461,278,464,266,465,252,468,234,485,214,459,205"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Rough Endoplasmic Reticulum')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="406,302,422,356,438,368,447,374,457,383,466,375,475,360,479,344,473,327,468,307,458,289"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Mitochondria')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="" coords="362,178,389,174,411,174,447,175,454,197,438,206,405,213,356,206" shape="poly">
+            <area onmouseover="whenMouseOver('Mitochondria')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="588,231,610,218,640,213,661,212,679,219,688,229,683,242,667,250,647,256,622,255,596,245"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Mitochondria')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href=""
+                coords="473,446,500,438,533,438,558,446,570,461,557,474,533,480,502,479,471,473,463,462,464,455,467,451"
+                shape="poly">
+            <area onmouseover="whenMouseOver('Cell Body (Soma)')"
+                onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt=""
+                title="" href="" coords="467,290,234" shape="circle">
+        </map>
+    </center>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <p>Isaac Atteson</p>
+        <style>
+            .container {
+                position: relative;
+            }
+    
+            #desc {
+                max-height: 11em;
+                overflow: hidden;
+            }</style>
+        <center><header><bold><font size="10"><u>Diagram of the Retina</u></font></bold></header>
+            <font size="5"><p id="name">Move mouse over parts of the image to see what they are</p></font>
+            <font size="4">
+                <div class="container">
+                <p id="desc" style="width: 1200px;">Move mouse over the ganglion cell to see more</p>
+            </div>
+            </font></center>
+    </head>
+<body>
+    <script>
+        document.getElementById("desc").innerHTML = "Move mouse over the ganglion cell to see more" + "<br>".repeat(10);
+        function whenMouseOver(name) {
+          document.getElementById("name").innerHTML = name;
+          if (name == "Ganglion Cells"){
+            document.getElementById("desc").innerHTML = "<u>(Click to zoom in!)</u><br><u><bold>Retinal ganglion cells (RGCs)</u></bold> are differentiated cells in the retina of an eyeball. They are types of neurons and are located in the front of the retina. They are the cells that transfer information from the other neurons in the retina to the neurons in the brain. They receive inputs from amacrine cells and bipolar cells. When they output a message, it is transported very far so it is encoded in neural impulses. There are many different types of ganglion cells, each which perform a slightly different function and have different responses to light.<br><u><bold>Interdisciplinary Connection:</u></bold> the ganglion cell acts as the wire from the eye to the brain and is very similar to a wire from a camera to a computer. The ganglion cell converts the raw image from our eyes into data that our brain can process, like an ADC converter converts analog camera data into digital computer data. However, the ganglion cell encodes the data in neural impulses, while the ADC encodes the data in numbers. The way a ganglion cell encodes its data is comparable to the way an analog television transmitter encodes its video to send to an analog television."+ "<br>".repeat(10);
+          }else{document.getElementById("desc").innerHTML = "Move mouse over the ganglion cell to see more" + "<br>".repeat(10);}
+        }
+        </script>
+        <center><img src="Retina.png" usemap="#image-map">
+<map name="image-map">
+    <area onmouseover="whenMouseOver('Retinal Artery')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="19,196,68,198,81,289,78,377,71,419,63,455,17,455,24,401,26,371,26,339,27,317,28,293,25,259,24,229,24,220,20,210" shape="poly">
+    <area onmouseover="whenMouseOver('Nerve Fibers')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="69,195,123,197,126,247,128,312,132,429,133,454,103,455,64,455,73,416,78,385,80,354,80,327,81,304,80,273,76,243,72,216,70,207" shape="poly">
+    <area onmouseover="whenMouseOver('Ganglion Cells')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="Ganglion" coords="151,195,336,455" shape="rect">
+    <area onmouseover="whenMouseOver('Bipolar Cells')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="418,192,570,456" shape="rect">
+    <area onmouseover="whenMouseOver('Photoreceptors (Cone Cells and Rod Cells)')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="701,188,860,193,862,249,861,260,870,262,868,289,874,290,873,323,872,331,882,332,884,366,892,369,892,385,893,395,900,397,899,410,894,426,894,458,709,455,701,206" shape="poly">
+    <area onmouseover="whenMouseOver('Retinal Pigment Epithelium (RPE)')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="872,196,932,196,933,217,938,219,935,257,941,260,938,286,936,293,936,325,939,330,940,362,945,364,945,391,939,394,942,416,946,422,948,442,945,455,900,456,901,415,907,402,900,391,900,365,890,362,891,324,879,324,879,287,874,283,874,254,868,254,869,217" shape="poly">
+</map>
+</center>
+</body>
+</html>

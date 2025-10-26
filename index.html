@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <p>Isaac Atteson</p>
+        <center><header><bold><font size="10"><u>Diagram of an Eyeball</u></font></bold></header>
+            <font size="5"><p id="name">Move mouse over parts of the image to see what they are</p></font></font>
+            <font size="4">
+                <p id="desc">Click on the retina to zoom into it</p>
+            </font></center>
+    </head>
+<body>
+    <script>
+        function whenMouseOver(name) {
+          document.getElementById("name").innerHTML = name;
+          if (name == "Retina"){
+            document.getElementById("desc").innerHTML = "Click!"
+          }else{document.getElementById("desc").innerHTML = "Click on the retina to zoom into it"}
+        }
+        </script>
+        <center><img src="eye.png" usemap="#image-map">
+<map name="image-map">
+    <area onmouseover="whenMouseOver('Cornea')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="244,403,242,421,231,419,223,411,217,399,209,387,205,372,202,361,199,349,197,337,196,323,198,308,199,294,199,277,202,264,205,248,212,235,221,219,231,209,241,207,247,206,243,216,243,227,238,230,232,235,229,242,227,250,224,258,223,265,222,274,220,283,219,290,219,299,219,309,220,321,220,336,220,349,223,364,227,376,231,387,236,395" shape="poly">
+    <area target="" alt="idk" title="" href="" coords="553,342,534,343,515,351,504,356,477,356,451,356,432,356,410,353,387,353,381,374,389,402,401,417,390,434,386,459,389,476,416,476,438,477,449,478,463,478,476,476,496,460,513,449,527,432,527,412,538,402,548,393,559,383,569,373,579,364,589,357,602,355,611,350,623,350,636,351,647,349,660,350,669,349,676,347,675,338,675,330,681,323,681,310,668,312,655,312,641,311,629,311,617,311,605,310,595,308,585,302,573,294,563,285,549,275,537,263,520,255,509,254,498,244,483,234,470,221,463,212,450,191,436,205,438,219,441,237,424,220,409,202,390,188,373,194,362,203,366,219,343,213,337,236,354,251,375,268,387,281,421,288,410,314,418,329,436,318,453,307,468,299,485,294,511,293,532,309" shape="poly" onmouseover="whenMouseOver('Retinal Veins/Arteries')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')">
+    <area onmouseover="whenMouseOver('Iris')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="249,392 247,383 239,366 232,348 230,335 219,333 232,365 239,381 248,392 " shape="polygon">
+    <area onmouseover="whenMouseOver('Iris')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="220,292 228,290 235,268 250,242 255,235 244,240 240,249 222,289 " shape="polygon">
+    <area onmouseover="whenMouseOver('Optic Nerve')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="606,294,604,366,691,369,690,297" shape="poly">
+    <area onmouseover="whenMouseOver('Pupil')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="231,290,225,304,230,315,232,303" shape="poly">
+    <area onmouseover="whenMouseOver('Lens')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" target="" alt="" title="" href="" coords="256,367,263,363,268,358,271,351,275,343,275,333,278,323,279,313,279,304,279,297,279,287,275,278,273,270,269,262,265,255,256,251,249,251,245,257,241,262,238,268,236,276,236,283,232,290,233,300,233,308,234,317,234,326,234,333,237,340,238,346,241,354,245,362" shape="poly">
+    <area target="" alt="" title="" href="Retina" coords="302,461,337,482,375,495,411,498,444,495,469,488,498,476,523,459,544,440,564,415,578,391,587,365,595,340,595,315,592,284,585,257,573,234,558,211,534,188,509,168,472,151,440,143,413,141,390,143,366,148,347,155,327,164,307,176,295,187,314,163,337,148,356,140,382,130,402,127,434,125,469,131,492,139,517,151,541,167,562,187,584,216,593,241,605,272,607,297,610,325,608,352,602,372,593,398,576,427,555,456,530,477,505,493,480,504,452,511,419,513,390,511,372,504,355,500,343,494,336,488,322,482,316,474" shape="poly" onmouseover="whenMouseOver('Retina')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')">
+    <area onmouseover="whenMouseOver('Choroid')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="248,253 257,250 265,228 275,209 290,191 309,167 328,155 348,143 366,135 392,127 419,125 451,127 475,133 509,145 541,167 555,181 575,203 593,238 603,267 608,297 616,297 613,277 605,248 593,222 582,203 561,178 541,158 517,142 495,132 477,126 456,120 438,118 418,118 403,119 384,124 366,128 350,135 336,142 317,153 299,169 282,189 269,206 252,241 " shape="polygon">
+    <area onmouseover="whenMouseOver('Choroid')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="240,357 249,366 261,402 276,427 297,456 323,481 353,499 391,511 435,513 475,505 517,485 549,461 576,427 594,393 603,367 611,367 606,385 593,413 581,435 572,448 556,465 542,478 526,489 509,499 490,507 466,516 436,518 407,519 378,514 357,507 335,494 309,477 297,465 281,448 267,427 258,411 247,382 " shape="polygon">
+    <area onmouseover="whenMouseOver('Sclera')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="243,402 255,405 263,420 277,444 302,473 313,480 326,489 335,495 359,507 382,514 407,518 435,519 460,516 482,509 508,500 533,484 551,469 566,456 576,441 589,424 598,406 606,386 611,368 655,367 691,367 689,383 620,382 614,397 608,409 600,425 590,442 578,456 564,472 552,482 540,493 525,501 508,511 490,518 468,525 448,530 430,530 405,530 383,527 363,520 342,513 309,494 292,482 282,473 270,460 259,448 252,438 242,420 243,411 " shape="polygon">
+    <area onmouseover="whenMouseOver('Sclera')" onmouseout="whenMouseOver('Move mouse over parts of the image to see what they are')" alt="" title="" href="" coords="245,207 242,226 256,230 261,219 281,190 308,161 328,145 353,131 374,124 398,119 424,118 447,118 472,123 492,130 520,143 543,158 563,177 576,193 588,209 597,227 606,249 611,267 615,284 616,297 635,297 661,297 691,297 689,280 670,280 652,280 626,278 620,255 615,239 601,211 588,190 572,170 549,148 517,128 485,114 450,107 419,103 400,103 373,109 353,117 333,125 316,135 300,147 284,159 267,176 256,192 " shape="polygon">
+</map>
+</center>
+</body>
+</html>
